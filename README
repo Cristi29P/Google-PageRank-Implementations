@@ -1,0 +1,16 @@
+Algoritmul Iterative:
+	Algoritmul incepe prin parsarea fisierului de intrare intr-o matrice. Generam apoi matricea de adicenta A pe baza datelor de intrare si avem grija la site-urilor care pointeaza inspre ele insele.
+	Pe baza matricei A generam matricea K care are pe diagonala suma nodurilor care pointeaza inspre exterior pentru fiecare nod in parte. Pe baza lui K si A generam matricea M.
+	Initializam vectorul de PageRank si aplicam algoritmul de iteratie pana obtinem acuratetea dorita.
+	Obs: pentru inversarea matricei a fost folosita functia predefinita din Octave.
+
+
+Algoritmul Algebraic:
+	Algoritmul incepe prin parsarea fisierului de intrare intr-o matrice. Generam apoi matricea de adicenta A pe baza datelor de intrare si avem grija la site-urilor care pointeaza inspre ele insele.
+	Pe baza matricei A generam matricea K care are pe diagonala suma nodurilor care pointeaza inspre exterior pentru fiecare nod in parte. Pe baza lui K si A generam matricea M.
+	Avand in vedere ca la infinit vectorul de PageRank are o anumita forma/solutie, putem sa aflam PageRank-ul aplicand direct formula de pe wikipedia si evitand astfel iteratiile multiple.	
+	Obs: pentru inversarea matricei a fost folosit Algoritmul Gram-Schmidt modificat.
+
+PageRank:
+	Algoritmul incepe prin parsarea fisierului de intrare si aplicarea celor doi algoritmi anteriori pentru aflarea celor doi vectori de PageRank. Printam in fisier numarul de pagini analizare, si vectorii de PageRank. Sortam apoi al doilea vector si, folosind functia de apartenenta, generam un clasament al paginilor Web.
+	
